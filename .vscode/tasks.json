@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "compil gcc",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-g",
+				"-o",
+				"./build/${fileBasenameNoExtension}",
+				"${file}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/cpp"
+		},
+		{
+			"type": "process",
+			"label": "lance exe courant",
+			"command": "./${fileBasenameNoExtension}",
+			"args": [
+			],
+			"options": {
+				"cwd": "./build"
+			},
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"detail": "launch: exe"
+		}
+	]
+}
