@@ -27,7 +27,14 @@ int main(int argc, char *argv[])
     {
         printf("Ah! bon...bah t'es mineur sac à merde!");
     }
-
+    if (1)
+    {
+        printf("C'est vrai");
+    }
+    else
+    {
+        printf("C'est faux");
+    }
        return 0;
 }
 
